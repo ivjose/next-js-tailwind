@@ -1,0 +1,17 @@
+@tailwind base;
+/* Write your own custom base styles here */
+
+@tailwind components;
+/* Write your own custom component styles here */
+
+@tailwind utilities;
+
+/* Your own custom utilities */
+
+.gradiant-bg {
+  background: linear-gradient(180deg, #bce4d0 75%, rgba(226, 255, 241, 0) 90%);
+}
+
+.gradiant-bg-70 {
+  background: linear-gradient(180deg, #bce4d0 45%, rgba(226, 255, 241, 0) 70%);
+}
