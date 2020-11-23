@@ -1,0 +1,28 @@
+@tailwind base;
+/* Write your own custom base styles here */
+
+@tailwind components;
+/* Write your own custom component styles here */
+
+@tailwind utilities;
+/* Your own custom utilities */
+
+.line-text {
+  background-image: linear-gradient(
+    135deg,
+    var(--theme-ui-colors-faintGray, rgba(204, 204, 204, 0.5)) 0%,
+    var(--theme-ui-colors-faintGray, rgba(204, 204, 204, 0.5)) 100%
+  );
+  background-size: 100% 0.4em;
+  background-position: 0px 88%;
+  background-repeat: no-repeat;
+}
+
+.title-line::before {
+  display: block;
+  content: ' ';
+  width: 60px;
+  height: 2px;
+  margin-bottom: 25px;
+  background: lightgray;
+}
