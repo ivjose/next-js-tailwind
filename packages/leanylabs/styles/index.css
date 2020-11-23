@@ -1,0 +1,18 @@
+@tailwind base;
+/* Write your own custom base styles here */
+
+@tailwind components;
+/* Write your own custom component styles here */
+
+@tailwind utilities;
+/* Your own custom utilities */
+
+html {
+  font-size: 18px;
+}
+
+ 
+
+.banner-height {
+  min-height: min(1080px, 100vh);
+}
