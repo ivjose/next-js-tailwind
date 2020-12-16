@@ -1,0 +1,162 @@
+@tailwind base;
+/* Write your own custom base styles here */
+
+@tailwind components;
+/* Write your own custom component styles here */
+
+@tailwind utilities;
+/* Your own custom utilities */
+
+.show-match-height {
+  min-height: 420px;
+}
+
+.show-teams-height {
+  min-height: 1190px;
+}
+
+.show-livestream-height {
+  min-height: 997px;
+}
+
+.show-match-char {
+  max-width: 381px;
+}
+
+.show-charity-char {
+  max-width: 478px;
+}
+
+@media (min-width: 640px) {
+  .show-match-height {
+    min-height: 475px;
+  }
+  /* ... */
+}
+
+@media (min-width: 768px) {
+  .show-match-height {
+    min-height: 673px;
+  }
+  .show-match-char {
+    max-width: 581px;
+  }
+  .show-teams-height {
+    min-height: 1300px;
+  }
+
+  .show-livestream-height {
+    min-height: 1047px;
+  }
+
+  /* ... */
+}
+
+@media (min-width: 1024px) {
+  .show-match-height {
+    min-height: 673px;
+  }
+
+  .show-teams-height {
+    min-height: 1300px;
+  }
+
+  .show-livestream-height {
+    min-height: 1147px;
+  }
+  /* ... */
+}
+
+@media (min-width: 1280px) {
+  .show-match-height {
+    min-height: 780px;
+  }
+
+  .show-charity-char {
+    max-width: 650px;
+  }
+
+  .show-teams-height {
+    min-height: 1400px;
+  }
+  
+  .show-livestream-height {
+    min-height: 1347px;
+  }
+  /* ... */
+}
+
+@media (min-width: 1400px) {
+  .show-match-height {
+    min-height: 857px;
+  }
+  .show-charity-char {
+    max-width: 785px;
+  }
+  .show-teams-height {
+    min-height: 1400px;
+  }
+  /* ... */
+}
+
+@media (min-width: 1700px) {
+  .show-match-height {
+    min-height: 982px;
+  }
+  .show-charity-char {
+    max-width: 822px;
+  }
+
+  .show-teams-height {
+    min-height: 1649px;
+  }
+  /* ... */
+}
+
+.line-x::after {
+  content: '';
+  width: 0.25rem;
+  height: 30%;
+  position: absolute;
+  margin-left: -4px;
+  top: 0;
+  left: 0;
+
+  @apply bg-black;
+}
+
+.title-left-line::after {
+  content: '';
+  width: 40%;
+  height: 0.25rem;
+  position: absolute;
+  margin-top: -4px;
+  top: 0;
+  left: 0;
+
+  @apply bg-white;
+}
+
+.title-right-line::after {
+  content: '';
+  width: 40%;
+  height: 0.25rem;
+  position: absolute;
+  margin-top: -4px;
+  top: 0;
+  right: 0;
+
+  @apply bg-black;
+}
+
+.title-sub-line::after {
+  content: '';
+  width: 40%;
+  height: 0.25rem;
+  position: absolute;
+  margin-top: -4px;
+  top: 0;
+  left: 0;
+
+  @apply bg-black;
+}
